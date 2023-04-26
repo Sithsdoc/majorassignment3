@@ -1,0 +1,24 @@
+@import "variable";
+@import "mixin";
+//3 screen sizes, grid,
+/*code below sets up the grid, media querie,images, border*/
+.write {
+    @include grid;
+}
+.content{
+    @include screen1;
+    @include screen2;
+    @include screen3;
+}
+//code below adds the seperate media queries to the images only
+.map{
+    @include image;
+}
+
+.blaster{
+    @include blast;
+
+}
+
+
+

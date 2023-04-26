@@ -1,0 +1,268 @@
+/*image and blast add the specifications needed for the images only, sets up 3 seperate columns and removes certain images as the screen gets smaller*/
+/*sets up the look for the 3 different screen sizes, adjusts the borders so that the content moves when the screen gets smaller*/
+/*code below sets up the grid, media querie,images, border*/
+.write {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    background-image: url("img/space.png");
+    background-size: cover;
+    color: white;
+  }
+  .content .form1 {
+    border: green solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form2 {
+    border: red solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form3 {
+    border: blue solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form4 {
+    border: greenyellow solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form5 {
+    border: orangered solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form6 {
+    border: #00FFFF solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form7 {
+    border: purple solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    background-image: url("img/space.png");
+    background-size: cover;
+    color: white;
+  }
+  .content .form1 {
+    border: green solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form2 {
+    border: red solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form3 {
+    border: blue solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form4 {
+    border: greenyellow solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form5 {
+    border: orangered solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form6 {
+    border: #00FFFF solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form7 {
+    border: purple solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content {
+    background-image: url("img/space.png");
+    background-size: cover;
+    color: white;
+  }
+  .content .form1 {
+    border: green solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form2 {
+    border: red solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form3 {
+    border: blue solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form4 {
+    border: greenyellow solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form5 {
+    border: orangered solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form6 {
+    border: #00FFFF solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .content .form7 {
+    border: purple solid 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .map {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .map .vader {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .map {
+    display: grid;
+    grid-template-columns: 1fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .map .vader {
+    display: none;
+  }
+  .map .galaxy {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blaster {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blaster {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .blaster .ren {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .blaster {
+    display: grid;
+    grid-template-columns: 1fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .blaster .ren {
+    display: none;
+  }
+  .blaster .gun {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

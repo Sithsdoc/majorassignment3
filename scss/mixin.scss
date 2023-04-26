@@ -1,0 +1,266 @@
+//at least 2 mixins, need at least 1 conditional
+//style for grid
+//code below sets up starting grid for the website
+@mixin grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: $fontsize;
+    font-family: $fontfamily; 
+    text-align: center;
+}
+/*image and blast add the specifications needed for the images only, sets up 3 seperate columns and removes certain images as the screen gets smaller*/
+@mixin image {
+    @media screen and (min-width: $screen){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;     
+    }
+    @media screen and (max-width: $screen){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        .vader{
+            display: none;
+        }
+    }
+    @media screen and (max-width: $slscreen){
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        @if (true){
+        .vader{
+            display: none;
+        }
+        .galaxy{
+            display: none;
+        }
+    }
+    }
+}
+
+@mixin blast {
+    @media screen and (min-width: $screen){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;     
+    }
+    @media screen and (max-width: $screen){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+
+        .ren{
+            display: none;
+        }
+    }
+    @media screen and (max-width: $slscreen){
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        .ren{
+            display: none;
+        }
+        .gun{
+            display: none;
+        }
+    }
+}
+/*sets up the look for the 3 different screen sizes, adjusts the borders so that the content moves when the screen gets smaller*/
+@mixin screen1 {
+    @media screen and (min-width: $screen){
+        background-image: url("img/space.png");
+        background-size: cover;
+        color: $fontcolor;
+        //sets up boarder with media queries
+        .form1{
+            border: green solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form2 {
+            border: red solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form3{
+            border: blue solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form4{
+            border: greenyellow solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form5 {
+            border: orangered solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form6 {
+            border: #00FFFF solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form7 {
+            border: purple solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    }
+
+   
+}
+
+@mixin screen2{
+    @media screen and (max-width: $screen){
+        background-image: url("img/space.png");
+        background-size: cover;
+        color: $fontcolor;  
+
+        .form1{
+            border: green solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form2 {
+            border: red solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form3{
+            border: blue solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form4{
+            border: greenyellow solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form5 {
+            border: orangered solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form6 {
+            border: #00FFFF solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form7 {
+            border: purple solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    }
+
+
+}
+
+
+@mixin screen3{
+    @media screen and (max-width: $slscreen){
+        background-image: url("img/space.png");
+        background-size: cover;
+        color: $fontcolor;
+ 
+
+        .form1{
+            border: green solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form2 {
+            border: red solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form3{
+            border: blue solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form4{
+            border: greenyellow solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form5 {
+            border: orangered solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form6 {
+            border: #00FFFF solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .form7 {
+            border: purple solid 10px;
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    }
+}
+
